@@ -7,7 +7,7 @@ redis.createClient(6379,redisHost).set("counter",1,function(){})
 router.get('/', function(req, res, next) {
 		var client = redis.createClient(6379,redisHost);
 		client.get("counter",function(err,value){
-		res.send("you are the "+value+" visitor.");
+		res.send("\r\nHello!<br>You are the "+value+" visitor.\r\n");
 		client.set("counter",Number(value)+1,function(){});
 	});
 });
