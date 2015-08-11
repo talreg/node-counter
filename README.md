@@ -1,7 +1,15 @@
 Overview
 =============
 This is a simple web app that display a counter every time a request is made. 
-it was created to test redis connection with node.
+It was created to:
+
+* Test redis connection with node.
+* Demonstrate docker image usage
+* Demonstrate docker-compose usage
+
+It works both as standalone and a docker container.
+
+The image `talreg/counter` is also on dockerhub, so you can copy the docker-compose file and run it without any other files.
 
 Requirements
 ----------
