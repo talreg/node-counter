@@ -7,4 +7,4 @@ COPY . /src
 RUN cd /src; npm install
 WORKDIR /src
 EXPOSE 3000
-CMD ["npm","start"]
+CMD ["node","bin/www"]

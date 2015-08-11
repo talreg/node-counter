@@ -1,10 +1,13 @@
 counter:
-  build: .
+  #build: .
+  image: talreg/counter
   ports:
    - "3000:3000"
   volumes:
    - .:/src
   links:
    - redis
+  environment:
+    REDIS_LOCATION: redis
 redis:
   image: redis
